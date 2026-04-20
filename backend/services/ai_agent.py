@@ -205,7 +205,7 @@ async def process_chat(
     try:
         # First call to GPT-4 - may call function
         response = await client.chat.completions.create(
-            model="gpt-4-turbo-preview",
+            model="gpt-4o-mini",
             messages=messages,
             tools=tools,
             tool_choice="auto",
@@ -257,7 +257,7 @@ async def process_chat(
 
                 # Get final response from GPT-4
                 final_response = await client.chat.completions.create(
-                    model="gpt-4-turbo-preview",
+                    model="gpt-4o-mini",
                     messages=messages,
                     temperature=0.7,
                     max_tokens=1000,

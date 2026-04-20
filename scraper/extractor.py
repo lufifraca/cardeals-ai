@@ -258,7 +258,7 @@ def extract_offers(html: str, dealer_name: str, base_url: str = "",
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4-turbo-preview",
+            model="gpt-4o-mini",
             messages=[
                 {
                     "role": "system",
