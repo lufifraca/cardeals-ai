@@ -4,6 +4,8 @@ A full-stack car deal aggregator for the Los Angeles area. Users search in plain
 
 **Live:** Deployed on Vercel (frontend) + Railway (backend)
 
+> 📖 **How the extraction works:** [When to use an LLM (and when not to)](docs/extraction-walkthrough.md) — a walkthrough of the hybrid CSS + GPT-4 pipeline.
+
 ---
 
 ## Overview
