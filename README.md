@@ -36,6 +36,7 @@ The core idea: every deal shown links back to the actual dealer page it came fro
 
 ## Scraper Pipeline
 
+> For a full walkthrough of *why* this is hybrid and not pure-LLM, see [docs/extraction-walkthrough.md](docs/extraction-walkthrough.md).
 Each dealer site uses a different platform (Octane, DealerOn, DealerInspire, Dealer.com, etc.), so the extraction had to handle completely different HTML structures.
 
 **Approach:** Platform-specific CSS extractors handle the 3 most common platforms (~600 lines of parsing logic). For unrecognized platforms, the pipeline falls back to GPT-4 extraction. This hybrid strategy keeps OpenAI API costs low while maintaining coverage across all 11 dealers.
